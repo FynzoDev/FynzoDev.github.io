@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FynzoDev | Systems Engineer</title>
+    <title>FynzoDev | Portfolio</title>
     <style>
         body { 
-            font-family: 'Consolas', 'Courier New', monospace; 
-            background-color: #050505; 
-            color: #33ff33; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #0f172a; 
+            color: #f8fafc; 
             margin: 0; 
             padding: 0;
             display: flex;
@@ -16,99 +16,68 @@
             align-items: center;
             min-height: 100vh;
         }
-        .terminal-box { 
-            max-width: 700px; 
+        .container { 
+            max-width: 600px; 
             width: 90%;
-            background: #0a0a0a; 
-            padding: 35px; 
-            border-radius: 8px; 
-            box-shadow: 0 0 30px rgba(51, 255, 51, 0.2); 
-            border: 1px solid #33ff33;
-        }
-        .terminal-header {
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 25px;
-            border-bottom: 1px dashed #33ff33;
-            padding-bottom: 10px;
-            text-transform: uppercase;
+            background: #1e293b; 
+            padding: 40px; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            border: 1px solid #38bdf8;
         }
         h1 { 
             color: #ffffff; 
-            margin: 0 0 5px 0; 
-            font-size: 2.8rem; 
-            letter-spacing: 1px;
+            margin: 0 0 10px 0; 
+            font-size: 2.5rem;
         }
-        .role { 
-            color: #33ff33; 
+        .subtitle { 
+            color: #38bdf8; 
             font-weight: bold; 
             margin-top: 0; 
             font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         p { 
-            font-size: 1.05rem; 
-            color: #dddddd; 
-            line-height: 1.8; 
+            font-size: 1.1rem; 
+            color: #cbd5e1; 
+            line-height: 1.7; 
         }
         strong {
-            color: #33ff33;
+            color: #38bdf8;
         }
-        .cyan-text {
-            color: #00ffff;
+        .skills-list {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
         }
-        .section-title {
-            font-size: 1.1rem;
-            color: #00ffff;
-            margin-top: 35px;
-            display: block;
-        }
-        .grid { 
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 10px; 
-            margin-top: 15px; 
-        }
-        .node {
-            background-color: #111;
-            color: #33ff33;
-            padding: 10px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            border: 1px solid #222;
-            text-align: center;
-        }
-        .node.main {
-            border-color: #00ffff;
-            color: #00ffff;
-        }
-        .footer { 
-            margin-top: 45px; 
-            font-size: 0.8rem; 
-            color: #444; 
+        .skill {
+            background: #0f172a;
+            color: #38bdf8;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border: 1px solid #334155;
         }
     </style>
 </head>
 <body>
-    <div class="terminal-box">
-        <div class="terminal-header">CONNECTION_ESTABLISHED // PORT: 2026</div>
+    <div class="container">
         <h1>FynzoDev</h1>
-        <p class="role">> Full-Stack Roblox Developer</p>
+        <p class="subtitle">Roblox Developer & Systems Engineer</p>
         
-        <p>Advanced Roblox Programmer with <strong>3+ years of pure scripting experience</strong>. Specialized in engineering highly optimized, scalable backend architectures from scratch using <strong>ModuleScripts</strong> and OOP. Capable of handling <strong>absolute game logic</strong>, complex mechanics, and custom frameworks.</p>
+        <p>Hi, I am an experienced Roblox Developer with <strong>3+ years of scripting expertise</strong>. I can code everything from scratch, specializing in building advanced backend architectures, full game logic, and optimized systems using <strong>ModuleScripts</strong> and OOP.</p>
         
-        <span class="section-title">[SYSTEM_CAPABILITIES]</span>
-        <div class="grid">
-            <div class="node main">Luau Expert</div>
-            <div class="node">ModuleScripts & OOP</div>
-            <div class="node">Backend Architecture</div>
-            <div class="node">Game Optimization</div>
-            <div class="node">Datastores & Savedata</div>
-            <div class="node">Advanced Frameworks</div>
-            <div class="node">Full Game Logic</div>
-            <div class="node">Network Security</div>
+        <div class="skills-list">
+            <div class="skill">Luau (Roblox Lua)</div>
+            <div class="skill">ModuleScripts & OOP</div>
+            <div class="skill">Full Game Logic</div>
+            <div class="skill">Backend Architecture</div>
+            <div class="skill">Game Optimization</div>
+            <div class="skill">Datastores & Savedata</div>
         </div>
-        
-        <div class="footer">STATION: GITHUB_PAGES // STATUS: ACTIVE</div>
     </div>
 </body>
 </html>
