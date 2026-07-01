@@ -1,70 +1,122 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FynzoDev | Roblox Scripter & UI Developer</title>
+    <title>FynzoDev | Roblox Developer</title>
     <style>
         body { 
-            font-family: 'Segoe UI', Arial, sans-serif; 
-            background-color: #121212; 
-            color: #e0e0e0; 
+            font-family: 'Courier New', Courier, monospace; 
+            background-color: #0a0a0c; 
+            color: #00ffcc; 
             margin: 0; 
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            overflow: hidden;
         }
         .portfolio-card { 
             max-width: 650px; 
             width: 90%;
-            background: #1e1e1e; 
+            background: rgba(20, 20, 25, 0.8); 
             padding: 40px; 
-            border-radius: 16px; 
-            box-shadow: 0 8px 30px rgba(0,0,0,0.5); 
-            border: 1px solid #333;
+            border-radius: 12px; 
+            box-shadow: 0 0 40px rgba(0, 255, 204, 0.15); 
+            border: 2px solid #00ffcc;
+            position: relative;
         }
-        h1 { color: #ffffff; margin-bottom: 5px; font-size: 2.2rem; }
-        .subtitle { color: #00a2ff; font-weight: 600; margin-top: 0; letter-spacing: 1px; }
-        p { font-size: 1.05rem; color: #b3b3b3; line-height: 1.6; }
-        
+        .portfolio-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            border-radius: 10px;
+            background: linear-gradient(45deg, transparent, rgba(0, 255, 204, 0.05));
+            pointer-events: none;
+        }
+        h1 { 
+            color: #ffffff; 
+            margin-bottom: 5px; 
+            font-size: 3rem; 
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+        }
+        .subtitle { 
+            color: #ff007f; 
+            font-weight: bold; 
+            margin-top: 0; 
+            letter-spacing: 3px; 
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+        }
+        p { 
+            font-size: 1.1rem; 
+            color: #ffffff; 
+            line-height: 1.7; 
+        }
+        strong {
+            color: #00ffcc;
+            text-shadow: 0 0 5px rgba(0, 255, 204, 0.3);
+        }
         .section-title {
-            font-size: 1.2rem;
-            color: #ffffff;
-            margin-top: 30px;
-            border-bottom: 2px solid #00a2ff;
-            padding-bottom: 5px;
-            display: inline-block;
+            font-size: 1.3rem;
+            color: #ff007f;
+            margin-top: 40px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: block;
         }
-        
-        .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+        .tags { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 12px; 
+            margin-top: 20px; 
+        }
         .tag {
-            background-color: #2a2a2a;
-            color: #00a2ff;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.9rem;
+            background-color: transparent;
+            color: #00ffcc;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 0.95rem;
             font-weight: bold;
-            border: 1px solid #444;
+            border: 1px solid #00ffcc;
+            transition: all 0.3s ease;
+        }
+        .tag:hover {
+            background-color: #00ffcc;
+            color: #0a0a0c;
+            box-shadow: 0 0 15px #00ffcc;
+            cursor: default;
         }
         .tag.highlight {
-            background-color: #00a2ff;
-            color: #121212;
-            border: none;
+            background-color: #ff007f;
+            color: #ffffff;
+            border: 1px solid #ff007f;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
         }
-        
-        .footer { margin-top: 40px; font-size: 0.85rem; color: #666; }
+        .tag.highlight:hover {
+            box-shadow: 0 0 15px #ff007f;
+        }
+        .footer { 
+            margin-top: 50px; 
+            font-size: 0.8rem; 
+            color: #444; 
+            letter-spacing: 1px;
+        }
     </style>
 </head>
 <body>
     <div class="portfolio-card">
         <h1>FynzoDev</h1>
-        <p class="subtitle">Roblox Scripter & UI Developer</p>
+        <p class="subtitle">> ROBLOX SCRIPTING ARCHITECT</p>
         
-        <p>Hi there! I am an experienced Roblox Developer with <strong>3+ years of scripting expertise</strong>. I specialize in creating advanced, optimized backend systems using <strong>ModuleScripts</strong>, and designing responsive, clean User Interfaces (UI).</p>
+        <p>Experienced developer with <strong>3+ years of expertise</strong> inside the Roblox ecosystem. Specialized in engineering high-performance backend systems via advanced <strong>ModuleScripts</strong>, implementing clean OOP patterns, and scripting flawless interactive <strong>User Interfaces</strong>.</p>
         
-        <div class="section-title">Core Expertise</div>
+        <span class="section-title">// CORE_CAPABILITIES</span>
         <div class="tags">
             <span class="tag highlight">Luau (Roblox Lua)</span>
             <span class="tag">ModuleScripts & OOP</span>
@@ -73,11 +125,10 @@
             <span class="tag">Game Optimization</span>
             <span class="tag">Datastores & Frameworks</span>
         </div>
-
-        <div class="section-title">Status</div>
-        <p>👨‍💻 Currently working on expanding my portfolio. Exciting project showcases and open-source systems are coming very soon!</p>
         
-        <div class="footer">Powered by GitHub Pages &bull; FynzoDev 2026</div>
+        <div class="footer">RUNNING ON GITHUB_PAGES // 2026</div>
     </div>
 </body>
 </html>
+
+```
